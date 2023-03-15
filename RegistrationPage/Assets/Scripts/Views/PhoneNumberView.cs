@@ -45,20 +45,11 @@ public class PhoneNumberView : MonoBehaviour
     
     private void Start()
     {
-        codeInputField.onValueChanged.AddListener(delegate
-        {
-            OnCodeInputChanded(codeInputField.text);
-        });
+        codeInputField.onValueChanged.AddListener(OnCodeInputChanded);
 
-        resendCodeButton.onClick.AddListener(delegate
-        {
-            ResendCode();
-        });
+        resendCodeButton.onClick.AddListener(ResendCode);
 
-        backButton.onClick.AddListener(delegate
-        {
-            BackButton();
-        });
+        backButton.onClick.AddListener(BackButton);
     }
 
     /// <summary>

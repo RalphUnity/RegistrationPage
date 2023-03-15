@@ -64,25 +64,16 @@ namespace RegView
                 CheckAge(yearDropdown.options[yearDropdown.value].text);
             });
 
-            emailField.onValueChanged.AddListener(delegate
-            {
-                CheckEmail(emailField.text);
-            });
+            emailField.onValueChanged.AddListener(CheckEmail);
 
-            phoneNumberField.onValueChanged.AddListener(delegate
-            {
-                CheckPhoneNumber();
-            });
+            phoneNumberField.onValueChanged.AddListener(CheckPhoneNumber);
 
             phoneNumberFormatDropdown.onValueChanged.AddListener(delegate
             {
                 ChangeNumberFormat(phoneNumberFormatDropdown.options[phoneNumberFormatDropdown.value].text);
             });
 
-            sendCodeButton.onClick.AddListener(delegate
-            {
-                SendCode();
-            });
+            sendCodeButton.onClick.AddListener(SendCode);
         }
 
         // Update is called once per frame
@@ -114,7 +105,7 @@ namespace RegView
             _isEmailValid = isValid;
         }
 
-        private void CheckPhoneNumber()
+        private void CheckPhoneNumber(string number)
         {
             _isMobileNumValid = (phoneNumberField.text.Length == phoneNumberField.characterLimit) ? true : false;
         }

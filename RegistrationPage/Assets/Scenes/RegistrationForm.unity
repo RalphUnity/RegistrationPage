@@ -18249,7 +18249,7 @@ MonoBehaviour:
   phoneNumberFormatDropdown: {fileID: 236964383}
   bdayErrorMessage: {fileID: 486349616}
   emailErrorMessage: {fileID: 1872451602}
-  supportText: {fileID: 0}
+  supportText: {fileID: 1991876550}
   firstNameField: {fileID: 563067582}
   lastNameField: {fileID: 930071048}
   zipCode: {fileID: 797226695}
