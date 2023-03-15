@@ -10,4 +10,6 @@ Project contains
 
 *Scripts uses MVC pattern
 
+Change Build settings to iOS and view to 16:9 portrait
+
 To run the project, open RegistratonForm scene.
