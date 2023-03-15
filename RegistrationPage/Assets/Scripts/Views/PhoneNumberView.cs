@@ -101,8 +101,8 @@ public class PhoneNumberView : MonoBehaviour
         int counter = _timer;
         while(counter > 0)
         {
-            int minutes = Mathf.FloorToInt(counter / 60);
-            int seconds = Mathf.FloorToInt(counter % 60);
+            int minutes = counter / 60;
+            int seconds = counter % 60;
 
             yield return new WaitForSeconds(1);
 
